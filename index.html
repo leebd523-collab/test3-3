@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>행정정보 통합관리 기본법 조항 검색</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">가상 행정안전부 공공서비스</p>
+        <h1>행정정보 통합관리 기본법 조항 검색</h1>
+        <p>
+          행정정보의 통합관리와 공동활용을 위한 조항을 쉽게 검색하고,
+          카드뉴스 이미지를 통해 정책 내용을 한눈에 확인할 수 있습니다.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="gallery" aria-label="정책 카드뉴스">
+        <img src="이미지/카드뉴스1.png" alt="행정정보 통합관리 기본법 카드뉴스 1" />
+        <img src="이미지/카드뉴스2.png" alt="행정정보 통합관리 기본법 카드뉴스 2" />
+        <img src="이미지/카드뉴스3.png" alt="행정정보 통합관리 기본법 카드뉴스 3" />
+        <img src="이미지/카드뉴스4.png" alt="행정정보 통합관리 기본법 카드뉴스 4" />
+      </section>
+
+      <section class="search-panel">
+        <label class="search-box" for="searchInput">
+          <span>🔎</span>
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="조 번호, 제목, 키워드를 입력하세요"
+            autocomplete="off"
+          />
+        </label>
+        <p id="resultCount" class="result-count">결과 0건</p>
+      </section>
+
+      <section id="articleList" class="card-list" aria-live="polite"></section>
+    </main>
+
+    <footer>
+      <p>본 페이지는 가상 데이터 기반 예시 웹 사이트입니다.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
